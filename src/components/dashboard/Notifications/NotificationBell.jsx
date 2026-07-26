@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FaBell, FaTimes, FaEnvelope, FaNewspaper, FaCheck } from 'react-icons/fa';
@@ -184,7 +183,7 @@ const NotificationBell = () => {
               )}
             </div>
 
-            {/* Footer */}
+            {/* Footer - "View all notifications" link */}
             <div className="p-3 border-t border-gray-200 text-center">
               <Link
                 to="/dashboard/notifications"

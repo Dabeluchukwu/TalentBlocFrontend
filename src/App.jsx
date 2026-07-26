@@ -24,6 +24,7 @@ const PostsManagement = lazy(() => import('./pages/dashboard/PostsManagement'));
 const CreatePost = lazy(() => import('./pages/dashboard/CreatePost'));
 const MessagesView = lazy(() => import('./pages/dashboard/MessagesView'));
 const Settings = lazy(() => import('./pages/dashboard/Settings'));
+const Notifications = lazy(() => import('./pages/dashboard/Notifications')); // Add this
 
 // Loading fallback component
 const PageLoader = () => (
@@ -82,6 +83,7 @@ function App() {
               <Route path="posts/create" element={<CreatePost />} />
               <Route path="posts/edit/:id" element={<CreatePost />} />
               <Route path="messages" element={<MessagesView />} />
+              <Route path="notifications" element={<Notifications />} /> {/* Add this */}
               <Route path="settings" element={<Settings />} />
             </Route>
           </Routes>

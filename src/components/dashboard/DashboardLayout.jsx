@@ -1,5 +1,5 @@
 // src/components/dashboard/DashboardLayout.jsx
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Outlet, Link, useLocation, Navigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { 
@@ -24,11 +24,33 @@ const DashboardLayout = () => {
   const { user, logout } = useAuth();
   const location = useLocation();
 
+  // Close sidebar on route change
+  useEffect(() => {
+    setIsSidebarOpen(false);
+  }, [location]);
+
+  // Get current page title based on route
+  const getPageTitle = () => {
+    const path = location.pathname;
+    if (path === '/dashboard') return 'Overview';
+    if (path.startsWith('/dashboard/posts')) {
+      if (path.includes('/create')) return 'Create Post';
+      if (path.includes('/edit')) return 'Edit Post';
+      return 'Posts';
+    }
+    if (path.startsWith('/dashboard/messages')) return 'Messages';
+    if (path.startsWith('/dashboard/notifications')) return 'Notifications';
+    if (path.startsWith('/dashboard/analytics')) return 'Analytics';
+    if (path.startsWith('/dashboard/settings')) return 'Settings';
+    return 'Dashboard';
+  };
+
   const menuItems = [
     { path: '/dashboard', icon: FaHome, label: 'Overview' },
     { path: '/dashboard/posts', icon: FaNewspaper, label: 'Posts' },
     { path: '/dashboard/messages', icon: FaEnvelope, label: 'Messages' },
-    { path: '/dashboard/analytics', icon: FaChartLine, label: 'Analytics' },
+    { path: '/dashboard/notifications', icon: FaBell, label: 'Notifications' },
+    // { path: '/dashboard/analytics', icon: FaChartLine, label: 'Analytics' },
     { path: '/dashboard/settings', icon: FaCog, label: 'Settings' },
   ];
 
@@ -61,7 +83,9 @@ const DashboardLayout = () => {
             </button>
             <Link to="/dashboard" className="flex items-center space-x-2">
               <FaTachometerAlt className="w-5 h-5 text-primary-500" />
-              <span className="text-lg font-bold text-gray-900">Dashboard</span>
+              <span className="text-lg font-bold text-gray-900 hidden sm:block">
+                {getPageTitle()}
+              </span>
             </Link>
           </div>
           <div className="flex items-center space-x-4">
