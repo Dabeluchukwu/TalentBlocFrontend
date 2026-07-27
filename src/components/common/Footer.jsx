@@ -34,9 +34,9 @@ const Footer = () => {
 
   const socialLinks = [
     { icon: FaTwitter, href: 'https://twitter.com/talentbloc', label: 'Twitter' },
-    { icon: FaLinkedinIn, href: 'https://linkedin.com/company/talentbloc', label: 'LinkedIn' },
-    { icon: FaFacebookF, href: 'https://facebook.com/talentbloc', label: 'Facebook' },
-    { icon: FaInstagram, href: 'https://instagram.com/talentbloc', label: 'Instagram' },
+    // { icon: FaLinkedinIn, href: 'https://linkedin.com/company/talentbloc', label: 'LinkedIn' },
+    // { icon: FaFacebookF, href: 'https://facebook.com/talentbloc', label: 'Facebook' },
+    // { icon: FaInstagram, href: 'https://instagram.com/talentbloc', label: 'Instagram' },
   ];
 
   return (
