@@ -7,30 +7,30 @@ const AboutValues = () => {
   const values = [
     {
       icon: FaUserCheck,
-      title: 'HOW WE RUN',
-      subtitle: 'The person who scoped it is the person who ships it',
-      description: 'You won\'t meet a strategist on Monday and a stranger on Wednesday. The engineer on the first call is the one writing the workflow, cleaning the data, and answering your Slack message at week six.',
+      title: 'Business before TECHNOLOGY',
+      subtitle: 'We start with the operating model, not the tool',
+      description: 'AI, automation and CRMs are instruments. Which ones we reach for, and when, is a decision that comes after we understand how the business is meant to run. Never the other way around.',
       color: 'primary'
     },
     {
       icon: FaCommentDots,
-      title: 'HOW WE TALK',
-      subtitle: 'Plain language over jargon',
-      description: 'You should be able to explain what we built to a colleague in one sentence. If a meeting note leaves you needing a glossary, we\'ve failed at our job.',
+      title: 'Clarity over noise',
+      subtitle: 'Plain language is the deliverable too',
+      description: 'If a recommendation can\'t be explained to a non-technical leader in one sentence, we haven\'t finished thinking. Every meeting note, every plan, every scope reads the same way: honest, direct, jargon-free.',
       color: 'secondary'
     },
     {
       icon: FaClipboardList,
-      title: 'HOW WE SCOPE',
-      subtitle: 'Small fixes get small proposals',
-      description: 'We refuse to dress a two week job up as a six month engagement. If the win is fixing three broken automations and merging duplicate accounts, that\'s what the quote is.',
+      title: 'Partner, not vendor',
+      subtitle: 'The person who scoped it is the person who ships it',
+      description: 'You won\'t meet a strategist on Monday and a stranger on Wednesday. The people you speak with in the assessment are the ones designing the operating model and standing up the systems that carry it.',
       color: 'primary'
     },
     {
       icon: FaDollarSign,
-      title: 'HOW WE DECIDE',
-      subtitle: 'Money first, novelty last',
-      description: 'Every recommendation gets weighed against a real business number. Time saved, revenue leaked, deals stuck. If we can\'t tie a fix to one of those, we don\'t push it.',
+      title: 'Tied to a real number',
+      subtitle: 'Every fix has to move something you can point at',
+      description: 'Time leadership gets back. Coordination cost that disappears. Decisions that stop routing through one person. If we can\'t tie a recommendation to a real business outcome, we don\'t push it.',
       color: 'secondary'
     }
   ];

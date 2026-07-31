@@ -22,7 +22,7 @@ const AboutHero = () => {
             transition={{ duration: 0.6 }}
           >
             <span className="inline-block px-4 py-1.5 bg-primary-500/20 text-primary-400 text-sm font-semibold rounded-full mb-6 border border-primary-500/20">
-              ABOUT US
+              Who we are
             </span>
           </motion.div>
 
@@ -32,9 +32,9 @@ const AboutHero = () => {
             transition={{ delay: 0.2, duration: 0.6 }}
             className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight"
           >
-            We're the team that actually{' '}
-            <span className="text-primary-400">fixes the tools</span>{' '}
-            your business runs on.
+           An AI operations consultancy for companies that have outgrown {' '}
+            <span className="text-primary-400">that have outgrown</span>{' '}
+           the way they were being run.
           </motion.h1>
 
           <motion.p
@@ -43,8 +43,7 @@ const AboutHero = () => {
             transition={{ delay: 0.3, duration: 0.6 }}
             className="mt-6 text-lg text-gray-300 leading-relaxed max-w-2xl"
           >
-            No layered teams, no account managers whose job is to translate your 
-            problem to someone else. Just straight answers and work that ships.
+           The people you meet on the first call with us are experts writing the operating model, designing the systems, and standing them up inside your business.
           </motion.p>
 
           <motion.div

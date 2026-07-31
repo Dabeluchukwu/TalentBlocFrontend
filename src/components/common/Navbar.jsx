@@ -251,7 +251,7 @@ const Navbar = () => {
                 to="/contact"
                 className="bg-secondary-500 hover:bg-secondary-600 text-white font-semibold px-6 py-2.5 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-md hover:shadow-lg"
               >
-                Book a call
+                Schedule an assessment
               </Link>
             )}
           </div>

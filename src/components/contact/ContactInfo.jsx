@@ -1,4 +1,4 @@
-// src/components/contact/ContactInfo.jsx
+
 import React from 'react';
 import { motion } from 'framer-motion';
 import { 
@@ -10,6 +10,7 @@ import {
   FaCheckCircle,
   FaArrowRight
 } from 'react-icons/fa';
+import { FaXTwitter } from "react-icons/fa6";
 import { Link } from 'react-router-dom';
 
 const ContactInfo = () => {
@@ -28,7 +29,7 @@ const ContactInfo = () => {
       color: 'secondary'
     },
     {
-      icon: FaTwitter,
+      icon: FaXTwitter,
       label: 'Follow Us',
       value: '@talentbloc',
       link: 'https://twitter.com/talentbloc',

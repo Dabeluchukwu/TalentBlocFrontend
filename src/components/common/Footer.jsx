@@ -9,6 +9,7 @@ import {
   FaInstagram,
   FaChevronRight
 } from 'react-icons/fa';
+import { FaXTwitter } from "react-icons/fa6";
 import logo from '/images/TalentBlocLogo.jpeg'; 
 
 const Footer = () => {
@@ -28,12 +29,12 @@ const Footer = () => {
   ];
 
   const legalLinks = [
-    { path: '/privacy', label: 'Privacy Policy' },
-    { path: '/terms', label: 'Terms of Service' },
+    { path: '', label: 'Privacy Policy' },
+    { path: '', label: 'Terms of Service' },
   ];
 
   const socialLinks = [
-    { icon: FaTwitter, href: 'https://twitter.com/talentbloc', label: 'Twitter' },
+    // { icon: FaXTwitter, href: 'https://twitter.com/talentbloc', label: 'Twitter' },
     // { icon: FaLinkedinIn, href: 'https://linkedin.com/company/talentbloc', label: 'LinkedIn' },
     // { icon: FaFacebookF, href: 'https://facebook.com/talentbloc', label: 'Facebook' },
     // { icon: FaInstagram, href: 'https://instagram.com/talentbloc', label: 'Instagram' },
@@ -59,8 +60,7 @@ const Footer = () => {
               </span>
             </Link>
             <p className="text-sm leading-relaxed">
-              CRM & automation consultancy. We set up, optimize, migrate, and 
-              automate the tools your team already runs on.
+              An AI operations consultancy. We help leaders resolve operational debt, so the business grows without the coordination getting heavier.
             </p>
             {/* Social Icons */}
             <div className="flex space-x-3 pt-2">
@@ -135,8 +135,8 @@ const Footer = () => {
                   rel="noopener noreferrer"
                   className="text-gray-400 hover:text-primary-400 transition-colors duration-200 flex items-center space-x-2"
                 >
-                  <FaTwitter className="w-4 h-4 flex-shrink-0" />
-                  <span>X / @talentbloc</span>
+                  <FaXTwitter className="w-4 h-4 flex-shrink-0" />
+                  <span>@talentbloc</span>
                 </a>
               </li>
             </ul>
@@ -169,7 +169,7 @@ const Footer = () => {
               © {currentYear} TalentBloc. All rights reserved.
             </p>
             <p className="text-sm text-gray-500 italic">
-              Built for teams that ship.
+            Operations, quietly done well.
             </p>
           </div>
         </div>

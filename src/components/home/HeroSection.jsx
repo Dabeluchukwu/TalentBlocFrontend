@@ -1,16 +1,14 @@
-// src/components/home/HeroSection.jsx
-import React, { useRef } from 'react';
+import React, { useRef, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { FaArrowRight, FaPhoneAlt } from 'react-icons/fa';
-import heroBg from '/images/talentBlocImage.png'; 
+import heroBg from '/images/talentBlocHeroThree.png';
 
 const HeroSection = ({ scrollToProcess }) => {
   const stats = [
-    { number: '500+', label: 'Clients' },
-    { number: '10+', label: 'Years Experience' },
-    { number: '95%', label: 'Success Rate' },
-    { number: '50+', label: 'Expert Consultants' },
+    { number: '100+', label: 'Project Delivered' },
+    { number: '2000+', label: 'Automation Built' },
+    { number: '5.0', label: 'Average Client Rating' },
   ];
 
   const handleScrollToProcess = (e) => {
@@ -18,6 +16,79 @@ const HeroSection = ({ scrollToProcess }) => {
     if (scrollToProcess) {
       scrollToProcess();
     }
+  };
+
+  // Particle animation
+  const ParticleField = () => {
+    const canvasRef = useRef(null);
+
+    useEffect(() => {
+      const canvas = canvasRef.current;
+      if (!canvas) return;
+      
+      const ctx = canvas.getContext('2d');
+      let particles = [];
+      let animationFrameId;
+
+      const resize = () => {
+        const parent = canvas.parentElement;
+        if (parent) {
+          canvas.width = parent.clientWidth;
+          canvas.height = parent.clientHeight;
+        }
+      };
+
+      const createParticles = () => {
+        const count = 50;
+        for (let i = 0; i < count; i++) {
+          particles.push({
+            x: Math.random() * canvas.width,
+            y: Math.random() * canvas.height,
+            size: Math.random() * 4 + 1,
+            speedX: (Math.random() - 0.5) * 0.5,
+            speedY: (Math.random() - 0.5) * 0.5,
+            opacity: Math.random() * 0.5 + 0.2,
+          });
+        }
+      };
+
+      const animate = () => {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        
+        particles.forEach(p => {
+          p.x += p.speedX;
+          p.y += p.speedY;
+          
+          if (p.x < 0 || p.x > canvas.width) p.speedX *= -1;
+          if (p.y < 0 || p.y > canvas.height) p.speedY *= -1;
+          
+          ctx.beginPath();
+          ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
+          ctx.fillStyle = `rgba(255, 255, 255, ${p.opacity})`;
+          ctx.fill();
+        });
+        
+        animationFrameId = requestAnimationFrame(animate);
+      };
+
+      resize();
+      createParticles();
+      animate();
+
+      window.addEventListener('resize', resize);
+
+      return () => {
+        cancelAnimationFrame(animationFrameId);
+        window.removeEventListener('resize', resize);
+      };
+    }, []);
+
+    return (
+      <canvas 
+        ref={canvasRef} 
+        className="absolute inset-0 w-full h-full rounded-3xl pointer-events-none"
+      />
+    );
   };
 
   return (
@@ -29,13 +100,11 @@ const HeroSection = ({ scrollToProcess }) => {
           alt="Hero Background" 
           className="w-full h-full object-cover"
         />
-        {/* Dark Overlay for better text readability */}
-        <div className="absolute inset-0 bg-black/40" />
-        {/* Gradient Overlay */}
+        <div className="absolute inset-0 bg-white/70" />
         <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/30 to-transparent" />
       </div>
 
-      {/* Background Decorative Elements - Optional, can keep or remove */}
+      {/* Background Decorative Elements */}
       <div className="absolute inset-0 overflow-hidden z-0">
         <div className="absolute -top-40 -right-40 w-80 h-80 bg-primary-500/10 rounded-full blur-3xl" />
         <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-secondary-500/10 rounded-full blur-3xl" />
@@ -56,7 +125,7 @@ const HeroSection = ({ scrollToProcess }) => {
               transition={{ delay: 0.2, duration: 0.6 }}
             >
               <span className="inline-block px-4 py-1.5 bg-primary-500/20 backdrop-blur-sm text-white text-sm font-semibold rounded-full mb-6 border border-white/10">
-                CRM & Automation Consultancy
+                AI Operations Consultancy
               </span>
             </motion.div>
 
@@ -66,8 +135,8 @@ const HeroSection = ({ scrollToProcess }) => {
               transition={{ delay: 0.3, duration: 0.6 }}
               className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight"
             >
-              Your software should be doing more of the work.{' '}
-              <span className="text-primary-400">Right now your team is.</span>
+              Your business grew.{' '}
+              <span className="text-primary-400">The way it's run didn't.</span>
             </motion.h1>
 
             <motion.p
@@ -76,7 +145,7 @@ const HeroSection = ({ scrollToProcess }) => {
               transition={{ delay: 0.4, duration: 0.6 }}
               className="mt-6 text-lg text-gray-200 leading-relaxed max-w-lg"
             >
-              We build, repair, and connect the CRMs and tools your business runs on, so the day to day stops depending on someone remembering a step, opening a spreadsheet, or copying a name into a second app.
+              Most companies struggle because the way they work no longer supports the growth they want. Processes become disconnected, teams rely on manual work, and important decisions get delayed or depend on the right person always being available. We help businesses simplify how they operate, so they can grow without adding more complexity.
             </motion.p>
 
             <motion.div
@@ -89,7 +158,7 @@ const HeroSection = ({ scrollToProcess }) => {
                 to="/contact"
                 className="inline-flex items-center px-6 py-3 bg-primary-500 hover:bg-primary-600 text-white font-semibold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-md hover:shadow-lg"
               >
-                Book a 30min call
+                Schedule an assessment
                 <FaArrowRight className="ml-2 w-4 h-4" />
               </Link>
               <button
@@ -123,44 +192,41 @@ const HeroSection = ({ scrollToProcess }) => {
             </motion.div>
           </motion.div>
 
-          {/* Right Content - Hero Image/Illustration */}
+          {/* Right Content - Increased Height Container */}
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.3 }}
             className="relative hidden lg:block"
           >
-            <div className="relative">
-              {/* Main Illustration */}
-              <div className="relative z-10 bg-gradient-to-br from-primary-500/30 to-primary-700/30 backdrop-blur-sm rounded-3xl p-8 aspect-square flex items-center justify-center border border-white/10">
-                <div className="text-center text-white">
-                  <div className="text-7xl mb-4">🚀</div>
-                  <h3 className="text-2xl font-bold">Talent Bloc</h3>
-                  <p className="text-primary-200 mt-2">Empowering Teams Worldwide</p>
-                </div>
-              </div>
-              
-              {/* Floating Elements */}
+            <div className="relative flex items-center justify-center">
+              {/* Main Glass Container - Increased Height */}
               <motion.div
-                animate={{ y: [0, -10, 0] }}
-                transition={{ duration: 3, repeat: Infinity, ease: 'easeInOut' }}
-                className="absolute -top-4 -right-4 bg-white/90 backdrop-blur-sm rounded-xl shadow-xl p-4 z-20"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.4, duration: 0.6 }}
+                className="relative z-10 bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-xl rounded-3xl p-12 border border-white/20 shadow-2xl w-full max-w-xs min-h-[250px]"
+                style={{
+                  background: 'linear-gradient(145deg, rgba(255,255,255,0.1), rgba(255,255,255,0.05))',
+                  boxShadow: '0 25px 50px -12px rgba(0,0,0,0.25), inset 0 1px 2px rgba(255,255,255,0.1)',
+                }}
               >
-                <div className="flex items-center space-x-2">
-                  <span className="text-2xl">⭐</span>
-                  <span className="font-semibold text-gray-900">4.9/5</span>
-                </div>
-              </motion.div>
-              
-              <motion.div
-                animate={{ y: [0, 10, 0] }}
-                transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut', delay: 1 }}
-                className="absolute -bottom-4 -left-4 bg-white/90 backdrop-blur-sm rounded-xl shadow-xl p-4 z-20"
-              >
-                <div className="flex items-center space-x-2">
-                  <span className="text-2xl">🏆</span>
-                  <span className="font-semibold text-gray-900">Top Consultancy</span>
-                </div>
+                {/* Glow Effect */}
+                <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-primary-500/20 via-transparent to-secondary-500/20 blur-2xl" />
+                
+                {/* Particle Canvas */}
+                <ParticleField />
+
+                {/* Glow Ring */}
+                <motion.div
+                  animate={{ 
+                    scale: [1, 1.1, 1],
+                    opacity: [0.3, 0.6, 0.3],
+                  }}
+                  transition={{ duration: 3, repeat: Infinity, ease: 'easeInOut' }}
+                  className="absolute inset-0 rounded-full border-2 border-primary-400/30"
+                  style={{ margin: '-10%' }}
+                />
               </motion.div>
             </div>
           </motion.div>

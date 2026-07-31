@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { motion } from 'framer-motion';
 import { 
@@ -14,26 +13,30 @@ const ServicesSection = () => {
   const services = [
     {
       icon: FaRocket,
-      title: 'CRM Foundations',
-      description: 'For teams still running on inboxes, sticky notes and one very heroic spreadsheet. We choose the platform that fits how you actually sell, stand it up properly, and get the team using it in the first week.',
+      title: 'Operations Assessment',
+      label: 'See it clearly',
+      description: 'We sit inside the business, watch how the work actually moves, and give leadership an honest read of where the debt is and what it\'s costing. Not a 40 page report. A conversation you can act on.',
       color: 'primary',
     },
     {
       icon: FaWrench,
-      title: 'System Rehab',
-      description: 'Half your pipeline stages are lying, an automation quietly died last quarter, and nobody trusts the reports. We open the hood, find what\'s wrong, and rebuild the parts that need it.',
+      title: 'Operating Blueprint',
+      label: 'Design the fix',
+      description: 'A written plan for the operations layer. What the process should be, which decisions need to be human, which don\'t, and which instruments carry the work. Priced by outcome, not by hour.',
       color: 'secondary',
     },
     {
       icon: FaDatabase,
-      title: 'Data Rescue',
-      description: 'Duplicates, missing fields, imports that landed sideways, three different spellings of the same company. We clean it, restructure it, and put the guardrails in place so it stays clean.',
+      title: 'AI, Systems & Automation',
+      label: 'Put it in place',
+      description: 'We deploy the instruments that carry the plan: AI where it earns its keep, automation for the repeatable, CRMs and internal tools tuned to how the business actually runs. No shelfware.',
       color: 'primary',
     },
     {
       icon: FaRobot,
-      title: 'Automation Builds',
-      description: 'Lead handoffs, onboarding checklists, invoice follow ups, status updates across tools. If your team is copying, pasting, or forwarding it, there\'s a build here that removes the step entirely.',
+      title: 'Ongoing Partnership',
+      label: 'Stay serious about it',
+      description: 'Operations isn\'t a project you finish. We stay close after launch, tune what\'s live, and help the operating model keep up as the business does. You get a partner, not a vendor.',
       color: 'secondary',
     },
   ];
@@ -98,10 +101,23 @@ const ServicesSection = () => {
                 }`} />
                 
                 <div className="relative">
-                  <div className={`w-14 h-14 rounded-xl flex items-center justify-center mb-6 ${
-                    isPrimary ? 'bg-primary-100 text-primary-500' : 'bg-secondary-100 text-secondary-500'
-                  } group-hover:scale-110 transition-transform duration-300`}>
-                    <Icon className="w-7 h-7" />
+                  {/* Icon with Label - ICON ON RIGHT, TEXT ON LEFT */}
+                  <div className="flex items-center justify-between mb-6">
+                    {/* Label - Left side */}
+                    <span className={`px-3 py-1.5 rounded-lg text-sm font-semibold ${
+                      isPrimary 
+                        ? 'bg-primary-100 text-primary-600' 
+                        : 'bg-secondary-100 text-secondary-600'
+                    }`}>
+                      {service.label}
+                    </span>
+                    
+                    {/* Icon - Right side */}
+                    <div className={`w-14 h-14 rounded-xl flex items-center justify-center flex-shrink-0 ${
+                      isPrimary ? 'bg-primary-100 text-primary-500' : 'bg-secondary-100 text-secondary-500'
+                    } group-hover:scale-110 transition-transform duration-300`}>
+                      <Icon className="w-7 h-7" />
+                    </div>
                   </div>
                   
                   <h3 className="text-xl font-bold text-gray-900 mb-3">
@@ -112,7 +128,7 @@ const ServicesSection = () => {
                     {service.description}
                   </p>
                   
-                  <div className="mt-4">
+                  {/* <div className="mt-4">
                     <Link 
                       to="/services" 
                       className={`inline-flex items-center text-sm font-semibold ${
@@ -122,7 +138,7 @@ const ServicesSection = () => {
                       Learn More
                       <FaArrowRight className="ml-2 w-3 h-3" />
                     </Link>
-                  </div>
+                  </div> */}
                 </div>
               </motion.div>
             );

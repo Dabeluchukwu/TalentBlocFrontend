@@ -9,58 +9,58 @@ const ProcessSection = () => {
   const steps = [
     {
       icon: FaUserFriends,
-      title: 'Sit in',
-      description: 'We spend real time with your team, in your tools, watching where the day actually goes. No 40 page audit, just an honest read.',
+      title: 'Assess',
+      description: 'We spend real time inside the business, with leadership and the team, watching where the day actually goes. We surface where the operational debt is hiding, and what it\'s costing.',
       color: 'primary',
     },
     {
       icon: FaPencilAlt,
-      title: 'Sketch',
-      description: 'A short, prioritised plan. What we\'d fix first, what it costs in time and money, what number should move because of it.',
+      title: 'Blueprint',
+      description: 'A written operating model. What the process should be, which decisions need to be human, which don\'t, which instruments carry the load, and what should measurably change.',
       color: 'secondary',
     },
     {
       icon: FaShip,
-      title: 'Ship',
-      description: 'We build in phases inside your live stack. Something usable is in your hands within weeks, not quarters.',
+      title: 'Build',
+      description: 'We put the plan into the live business in phases. AI, automation, CRM and internal tooling tuned to the model. Something useful is in your hands within weeks, not quarters.',
       color: 'primary',
     },
     {
       icon: FaSeedling,
-      title: 'Tend',
-      description: 'After launch we stay close. Broken automations get caught by us, not by you. New workflows get added as the business grows.',
+      title: 'Partner',
+      description: 'Operations doesn\'t sit still. We stay close, tune what\'s live, and help the operating model evolve as the business does. Fewer surprises, more confidence.',
       color: 'secondary',
     },
   ];
 
   const faqs = [
     {
-      question: 'Which CRMs do you actually work in?',
-      answer: 'Day in, day out we are in HubSpot, Salesforce, Pipedrive, Monday.com and Zoho. Around them we wire in the phone, project, billing, marketing and support tools you\'re already using. When the tool hits its ceiling, we build the custom piece.',
+      question: 'You call yourselves an AI operations consultancy. What does that actually mean?',
+      answer: 'We work on how a company runs, not just what tools it uses. That means we look at the operating model first, then decide where AI, automation, CRM and internal tooling belong inside it. Technology is the instrument, the operating model is the offer.',
     },
     {
-      question: 'What does the first call look like?',
-      answer: 'Thirty minutes, no slide deck. You describe the mess, we ask questions. By the end we can usually tell you whether it\'s the platform, the setup, the data, the process, or some flavour of all four. If we\'re not the right fit, we\'ll say so.',
+      question: 'How is this different from an agency?',
+      answer: 'An agency ships projects. We take a position on the business. We stay long enough to see whether the operations actually got better, we say no to work that doesn\'t move a real number, and we\'re honest when the answer isn\'t more technology.',
     },
     {
-      question: 'We don\'t have a CRM at all. Is that a problem?',
-      answer: 'It\'s actually a great starting point. Nothing to unwind. We help you pick the platform that suits how your team really works, get it live, and make sure the team is using it in week one instead of ignoring it in month three.',
+      question: 'Where does AI fit in?',
+      answer: 'Where it earns its keep. Some parts of the operation belong to humans, some parts belong to automation, and a specific slice belongs to AI: agents, assistants, and models that carry repeatable judgement work. We\'re deliberate about which is which.',
     },
     {
-      question: 'How long until we see something real?',
-      answer: 'A focused cleanup or one big automation is usually 2 to 4 weeks. A full setup with data migration and several automations is closer to 6 to 8. You get a written scope and timeline before anyone signs anything.',
+      question: 'What does the first conversation look like?',
+      answer: 'Thirty minutes, no slide deck. You describe what feels heavy, we ask questions. By the end we can usually tell you whether the friction is the operating model, the instruments, the data, the process, or some flavour of all four. If we\'re not the right fit, we\'ll say so.',
     },
     {
-      question: 'Do you always rebuild from scratch?',
-      answer: 'Almost never. Most of the time your setup has good bones and just needs surgery in a few specific places. We\'ll only recommend starting over when the current tool is genuinely holding the business back.',
+      question: 'How long until something changes?',
+      answer: 'The assessment takes 1 to 3 weeks depending on the size of the business. First visible changes in the operating model usually land inside 4 to 8 weeks after that. The full picture is a longer partnership, not a project.',
+    },
+    {
+      question: 'Do you replace our existing tools?',
+      answer: 'Almost never. Most operating problems aren\'t a tooling problem, they\'re a design problem sitting on top of tools that were never wired up to how the business actually runs. We only recommend replacement when the current instrument is genuinely holding the business back.',
     },
     {
       question: 'We don\'t really know what we need yet.',
       answer: 'That\'s most of our first conversations. You don\'t have to arrive with a spec. If you can describe what\'s frustrating, slow, or unreliable right now, we can take it from there.',
-    },
-    {
-      question: 'Do you handle stuff outside the CRM?',
-      answer: 'Yes. Onboarding, invoicing, quoting, reporting, approvals, internal handoffs. If a person is doing it manually and a system could carry it, that\'s fair game.',
     },
   ];
 
@@ -131,7 +131,7 @@ const ProcessSection = () => {
         >
           <div className="text-center mb-10">
             <h3 className="text-2xl font-bold text-gray-900">QUESTIONS</h3>
-            <p className="text-gray-600 mt-2">The things people ask before they book.</p>
+            <p className="text-gray-600 mt-2">The things leaders ask before they book.</p>
           </div>
 
           <div className="space-y-4">

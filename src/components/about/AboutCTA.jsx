@@ -51,9 +51,9 @@ const AboutCTA = () => {
             viewport={{ once: true }}
             className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight"
           >
-            If any of this sounds like your Monday,
+           If your team is dealing with this, we're happy to talk through it with you.
             <br />
-            <span className="text-primary-400">let's put an hour on the calendar.</span>
+            <span className="text-primary-400">Book a strategy session to uncover where your operations are creating unnecessary complexity—and what to do about it.</span>
           </motion.h2>
 
           <motion.div
@@ -67,7 +67,7 @@ const AboutCTA = () => {
               to="/contact"
               className="inline-flex items-center px-8 py-4 bg-primary-500 hover:bg-primary-600 text-white font-semibold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-2xl text-lg"
             >
-              Book a strategy call
+              Schedule an assessment
               <FaArrowRight className="ml-3 w-5 h-5" />
             </Link>
           </motion.div>

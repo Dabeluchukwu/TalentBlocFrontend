@@ -4,60 +4,42 @@ import { motion } from 'framer-motion';
 import { 
   FaHubspot, 
   FaSalesforce,
-  FaCog,
-  FaBolt,
-  FaPhone,
-  FaEnvelope,
-  FaDollarSign,
-  FaBook,
-  FaUsers,
-  FaBuilding,
-  FaCloud,
-  FaDatabase,
-  FaCode,
-  FaTools,
-  FaRocket,
-  FaNetworkWired,
-  FaPlug,
-  FaMicrochip,
-  FaChartLine,
-  FaUserFriends,
-  FaClipboardList,
-  FaTasks,
-  FaProjectDiagram,
-  FaLink,
-  FaWrench
 } from 'react-icons/fa';
+import { CgMonday } from "react-icons/cg";
+import { SiPiped, SiZoho, SiAircall, SiAsana, SiQuickbooks, SiZendesk, SiClickup, SiPaypal, SiXero, SiIntercom, SiTrello, SiZapier, SiMake, SiN8N } from "react-icons/si";
+import { FaMailchimp, FaStripe } from "react-icons/fa";
+import { LuSquareSquare } from "react-icons/lu";
+
 
 const StackSection = () => {
   const crmTools = [
     { name: 'HubSpot', icon: FaHubspot, color: '#FF7A59' },
     { name: 'Salesforce', icon: FaSalesforce, color: '#00A1E0' },
-    { name: 'Pipedrive', icon: FaPlug, color: '#1D6F9C' },
-    { name: 'Monday.com', icon: FaNetworkWired, color: '#FF6D00' },
-    { name: 'Zoho', icon: FaCloud, color: '#E42527' },
+    { name: 'Pipedrive', icon: SiPiped, color: '#1D6F9C' },
+    { name: 'Monday.com', icon: CgMonday, color: '#FF6D00' },
+    { name: 'Zoho', icon: SiZoho, color: '#E42527' },
   ];
 
   const otherTools = [
-    { name: 'Aircall', icon: FaPhone, color: '#00B388' },
-    { name: 'Asana', icon: FaClipboardList, color: '#F06A6A' },
-    { name: 'Mailchimp', icon: FaEnvelope, color: '#FFE01B' },
-    { name: 'Stripe', icon: FaDollarSign, color: '#635BFF' },
-    { name: 'QuickBooks', icon: FaBook, color: '#2CA01C' },
-    { name: 'Zendesk', icon: FaUserFriends, color: '#03363D' },
-    { name: 'RingCentral', icon: FaPhone, color: '#0D5B8F' },
-    { name: 'ClickUp', icon: FaRocket, color: '#7B68EE' },
-    { name: 'PayPal', icon: FaDollarSign, color: '#003087' },
-    { name: 'Xero', icon: FaChartLine, color: '#13B5EA' },
-    { name: 'Intercom', icon: FaUsers, color: '#AF52DE' },
-    { name: 'Trello', icon: FaClipboardList, color: '#0052CC' },
-    { name: 'Square', icon: FaBuilding, color: '#557D9E' },
+    { name: 'Aircall', icon: SiAircall, color: '#00B388' },
+    { name: 'Asana', icon: SiAsana, color: '#F06A6A' },
+    { name: 'Mailchimp', icon: FaMailchimp, color: '#FFE01B' },
+    { name: 'Stripe', icon: FaStripe, color: '#635BFF' },
+    { name: 'QuickBooks', icon: SiQuickbooks, color: '#2CA01C' },
+    { name: 'Zendesk', icon: SiZendesk, color: '#03363D' },
+    // { name: 'RingCentral', icon: SiClickup, color: '#0D5B8F' },
+    { name: 'ClickUp', icon: SiClickup, color: '#7B68EE' },
+    { name: 'PayPal', icon: SiPaypal, color: '#003087' },
+    { name: 'Xero', icon: SiXero, color: '#13B5EA' },
+    { name: 'Intercom', icon: SiIntercom, color: '#AF52DE' },
+    { name: 'Trello', icon: SiTrello, color: '#0052CC' },
+    { name: 'Square', icon: LuSquareSquare, color: '#557D9E' },
   ];
 
   const automationTools = [
-    { name: 'Zapier', icon: FaBolt, color: '#FF4A00' },
-    { name: 'Make', icon: FaCog, color: '#6D4C41' },
-    { name: 'n8n', icon: FaTools, color: '#B44B3A' },
+    { name: 'Zapier', icon: SiZapier, color: '#FF4A00' },
+    { name: 'Make', icon: SiMake, color: '#6D4C41' },
+    { name: 'n8n', icon: SiN8N, color: '#B44B3A' },
   ];
 
   return (
@@ -74,11 +56,10 @@ const StackSection = () => {
             THE SHAPE OF THE FIX
           </span>
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 max-w-3xl mx-auto">
-            One stack, quietly talking to itself.
+            Technology <span className='text-primary-400'>is the instrument</span> , not the offer.
           </h2>
           <p className="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
-            Your CRM sits in the middle. The rest of your stack plugs into it. In between them, 
-            a thin automation layer keeps everything in sync without anyone touching a keyboard.
+            The operating model comes first. Once that's clear, we choose the technology that carry it. A CRM in the middle, the rest of your tools plugged in around it, and a thin layer of AI and automation quietly keeping the whole thing honest.
           </p>
         </motion.div>
 

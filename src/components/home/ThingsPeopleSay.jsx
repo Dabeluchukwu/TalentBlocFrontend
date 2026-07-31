@@ -40,8 +40,26 @@ const ThingsPeopleSay = () => {
     {
       text: "The setup that carried us at ten people is falling apart at fifty.",
       icon: "🏗️"
-    }
+    },
+     {
+      text: " The tools were meant to help, they've become another job.",
+      icon: "📈"
+    },
+    {
+      text: "Reporting takes a full day and I still don't trust the answer.",
+      icon: "📋"
+    },
+     {
+      text: "We keep firefighting the same category of problem.",
+      icon: "⚠️"
+    },
+    {
+      text: "The setup that carried us at ten people is choking at thirty.",
+      icon: "🧠"
+    },
   ];
+
+ 
 
   const itemsPerPage = 4;
   const totalPages = Math.ceil(quotes.length / itemsPerPage);

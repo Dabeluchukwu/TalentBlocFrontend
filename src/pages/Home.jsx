@@ -1,6 +1,7 @@
 // src/pages/Home.jsx
 import React, { useRef } from 'react';
 import HeroSection from '../components/home/HeroSection';
+import HiddenCostSection from '../components/home/HiddenCostSection'; 
 import ServicesSection from '../components/home/ServicesSection';
 import StackSection from '../components/home/StackSection';
 import ThingsPeopleSay from '../components/home/ThingsPeopleSay';
@@ -25,6 +26,7 @@ const Home = () => {
   return (
     <div className="overflow-hidden">
       <HeroSection scrollToProcess={scrollToProcess} />
+      <HiddenCostSection />
       <ServicesSection />
       <StackSection />
       <ThingsPeopleSay />
@@ -32,7 +34,7 @@ const Home = () => {
         <ProcessSection />
       </div>
       <WhyChooseUs />
-      <TestimonialsSection />
+      {/* <TestimonialsSection /> */}
       <InsightsSection />
       <CTASection />
     </div>
