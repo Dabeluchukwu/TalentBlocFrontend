@@ -28,10 +28,10 @@ const Footer = () => {
     { path: '/resources/announcements', label: 'Announcements' },
   ];
 
-  const legalLinks = [
-    { path: '', label: 'Privacy Policy' },
-    { path: '', label: 'Terms of Service' },
-  ];
+ const legalLinks = [
+  { path: '', label: 'Privacy Policy', id: 'privacy' },
+  { path: '', label: 'Terms of Service', id: 'terms' },
+];
 
   const socialLinks = [
     // { icon: FaXTwitter, href: 'https://twitter.com/talentbloc', label: 'Twitter' },
@@ -146,7 +146,7 @@ const Footer = () => {
               <h4 className="text-white font-semibold text-sm mb-3">Legal</h4>
               <ul className="space-y-2">
                 {legalLinks.map((link) => (
-                  <li key={link.path}>
+                  <li key={link.id}> 
                     <Link
                       to={link.path}
                       className="text-gray-400 hover:text-primary-400 transition-colors duration-200 text-sm"

@@ -41,38 +41,34 @@ const ThingsPeopleSay = () => {
       text: "The setup that carried us at ten people is falling apart at fifty.",
       icon: "🏗️"
     },
-     {
-      text: " The tools were meant to help, they've become another job.",
-      icon: "📈"
+    {
+      text: "The tools were meant to help, they've become another job.",
+      icon: "💻" // Changed from 📈
     },
     {
       text: "Reporting takes a full day and I still don't trust the answer.",
-      icon: "📋"
+      icon: "📉" // Changed from 📋
     },
-     {
+    {
       text: "We keep firefighting the same category of problem.",
-      icon: "⚠️"
+      icon: "🔥" // Changed from ⚠️
     },
     {
       text: "The setup that carried us at ten people is choking at thirty.",
-      icon: "🧠"
+      icon: "🤯" // Changed from 🧠
     },
   ];
-
- 
 
   const itemsPerPage = 4;
   const totalPages = Math.ceil(quotes.length / itemsPerPage);
 
   // Auto-play functionality with hover pause
   useEffect(() => {
-    // Clear any existing interval
     if (intervalRef.current) {
       clearInterval(intervalRef.current);
       intervalRef.current = null;
     }
 
-    // Only set up interval if not hovered
     if (!isHovered) {
       intervalRef.current = setInterval(() => {
         setCurrentIndex((prevIndex) => 
@@ -81,7 +77,6 @@ const ThingsPeopleSay = () => {
       }, 3000);
     }
 
-    // Cleanup on unmount or when hover state changes
     return () => {
       if (intervalRef.current) {
         clearInterval(intervalRef.current);
@@ -168,19 +163,7 @@ const ThingsPeopleSay = () => {
             </motion.div>
           </AnimatePresence>
 
-          {/* Hover indicator - subtle pause icon */}
-          {/* {isHovered && (
-            <motion.div
-              initial={{ opacity: 0, scale: 0.8 }}
-              animate={{ opacity: 1, scale: 1 }}
-              exit={{ opacity: 0, scale: 0.8 }}
-              className="absolute top-4 right-4 bg-gray-800/80 backdrop-blur-sm rounded-full px-3 py-1 text-xs text-gray-400 border border-gray-700"
-            >
-              ⏸ Paused
-            </motion.div>
-          )} */}
-
-          {/* Dot Indicators - Minimal */}
+          {/* Dot Indicators */}
           <div className="flex justify-center items-center mt-10 space-x-2">
             {Array.from({ length: totalPages }).map((_, index) => (
               <motion.div
