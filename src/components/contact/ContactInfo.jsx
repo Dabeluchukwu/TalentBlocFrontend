@@ -82,7 +82,7 @@ const ContactInfo = () => {
                       <FaArrowRight className="ml-2 w-3 h-3 opacity-0 group-hover:opacity-100 transition-all duration-200 group-hover:translate-x-1" />
                     </a>
                   ) : (
-                    <p className="text-gray-900 font-medium break-all">{item.value}</p>
+                    <p className="text-gray-900 font-medium break-al">{item.value}</p>
                   )}
                 </div>
               </div>

@@ -29,8 +29,8 @@ const Footer = () => {
   ];
 
  const legalLinks = [
-  { path: '', label: 'Privacy Policy', id: 'privacy' },
-  { path: '', label: 'Terms of Service', id: 'terms' },
+  { path: '/privacy-policy', label: 'Privacy Policy', id: 'privacy' },
+  { path: '/terms-of-service', label: 'Terms of Service', id: 'terms' },
 ];
 
   const socialLinks = [

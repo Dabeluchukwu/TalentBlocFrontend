@@ -24,7 +24,10 @@ const PostsManagement = lazy(() => import('./pages/dashboard/PostsManagement'));
 const CreatePost = lazy(() => import('./pages/dashboard/CreatePost'));
 const MessagesView = lazy(() => import('./pages/dashboard/MessagesView'));
 const Settings = lazy(() => import('./pages/dashboard/Settings'));
-const Notifications = lazy(() => import('./pages/dashboard/Notifications')); // Add this
+const Notifications = lazy(() => import('./pages/dashboard/Notifications'));
+const PrivacyPolicy = lazy(() => import('./pages/PrivacyPolicy'));
+const TermsOfService = lazy(() => import('./pages/TermsOfService'));
+
 
 // Loading fallback component
 const PageLoader = () => (
@@ -59,6 +62,8 @@ function App() {
                         <Route path="/resources/:slug" element={<ResourceDetail />} />
                         <Route path="/admin/login" element={<AdminLogin />} />
                         <Route path="/login" element={<Navigate to="/admin/login" replace />} />
+                        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+                        <Route path="/terms-of-service" element={<TermsOfService />} />
                       </Routes>
                     </Suspense>
                   </main>

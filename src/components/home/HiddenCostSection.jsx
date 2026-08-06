@@ -60,9 +60,9 @@ const HiddenCostSection = () => {
               </p>
 
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
-                Growth creates complexity. 
+                Growth creates complexity. {' '}
                 <span className="bg-gradient-to-r from-primary-500 to-slate-300 bg-clip-text text-transparent">
-                  AI can't fix broken operations.
+                   AI can't fix broken operations.
                 </span>
               </h2>
             </motion.div>
