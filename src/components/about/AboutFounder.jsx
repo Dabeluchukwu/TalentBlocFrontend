@@ -108,7 +108,7 @@ const AboutFounder = () => {
               </p>
 
                <p className="text-gray-700 leading-relaxed">
-                At TalentBloc, we study how work really moves through a business. We find where time, knowledge, and decisions are getting lost, and we build the systems that make the business simpler to run. Sometimes that's automation. Sometimes it's redesigning a workflow. Sometimes it's putting AI exactly where it earns its keep, and nowhere else.
+                At TalentBloc, we study how work really moves through a business. We find where time, knowledge, and decisions are getting lost, and we build the systems that make the business simpler to run. 
               </p>
 
               <p className="text-gray-700 leading-relaxed">
