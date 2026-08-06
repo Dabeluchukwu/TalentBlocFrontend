@@ -2,27 +2,33 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { FaShieldAlt, FaSyncAlt, FaChartLine, FaArrowRight } from 'react-icons/fa';
+import { FaShieldAlt, FaSyncAlt, FaChartLine, FaArrowRight, FaUserFriends } from 'react-icons/fa';
 
 const WhyChooseUs = () => {
   const features = [
     {
       icon: FaShieldAlt,
-      title: 'Vetted Expertise',
-      description: 'Every consultant is an industry veteran with proven records.',
+      title: 'Operations before automation',
+      description: 'We improve the way work flows before introducing technology. Better operations make every AI investment more effective.',
       color: 'primary',
     },
     {
       icon: FaSyncAlt,
-      title: 'Agile Integration',
-      description: 'Seamlessly aligning our strategies with your existing workflows.',
+      title: 'Built around your business',
+      description: 'No templates. No one-size-fits-all solutions. Every operating model is designed around how your business works, your people, and your goals.',
       color: 'secondary',
     },
     {
       icon: FaChartLine,
-      title: 'Data-Driven Insights',
-      description: 'Continuous monitoring and optimization for guaranteed ROI.',
+      title: 'Practical implementation',
+      description: 'Strategy only matters if it gets adopted. We work alongside your team to implement, refine, and improve until the new way of working becomes the normal way of working.',
       color: 'primary',
+    },
+     {
+      icon: FaUserFriends,
+      title: 'Long-term partnership',
+      description: 'Business doesn\'t stand still, and neither should your operations. We continue helping you adapt your systems, processes, and AI capabilities as your business grows.',
+      color: 'secondary',
     },
   ];
 
@@ -44,22 +50,21 @@ const WhyChooseUs = () => {
             viewport={{ once: true }}
           >
             <span className="inline-block px-4 py-1.5 bg-primary-100 text-primary-700 text-sm font-semibold rounded-full mb-4">
-              WHY CHOOSE TALENT BLOC
+              WHY TALENT BLOC
             </span>
             <h2 className="text-3xl sm:text-4xl font-bold text-gray-900">
-              Redefining the consultancy standard through precision.
+              We don't start with AI. We start with how your business works.
             </h2>
             <p className="mt-4 text-lg text-gray-600 leading-relaxed">
-              We don't just provide talent; we engineer success. Our methodology combines 
-              deep industry insights with a human-centric approach to ensure that every 
-              placement and every strategy is built for longevity.
+              Most AI projects fail because they're built on top of inefficient operations. We take a different approach. We help businesses design better ways of working first, then apply AI where it creates measurable value.
+
             </p>
-            <blockquote className="mt-6 pl-4 border-l-4 border-primary-500">
+            {/* <blockquote className="mt-6 pl-4 border-l-4 border-primary-500">
               <p className="text-gray-700 italic">
                 "Our mission is to bridge the gap between human potential and business objectives."
               </p>
             </blockquote>
-            
+             */}
             <Link
               to="/about"
               className="inline-flex items-center mt-8 px-6 py-3 bg-primary-500 hover:bg-primary-600 text-white font-semibold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-md hover:shadow-lg"

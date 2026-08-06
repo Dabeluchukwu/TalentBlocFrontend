@@ -49,11 +49,11 @@ const AboutCTA = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2, duration: 0.6 }}
             viewport={{ once: true }}
-            className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight"
+            className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white leading-tight"
           >
-           If your team is dealing with this, we're happy to talk through it with you.
+           If our way of thinking resonates with you, we'd be happy to have a conversation.
             <br />
-            <span className="text-primary-400">Book a strategy session to uncover where your operations are creating unnecessary complexity—and what to do about it.</span>
+            <span className="text-primary-400">Every business is different. A short discovery call is often enough to understand where your operations are creating unnecessary complexity and whether we're the right team to help.</span>
           </motion.h2>
 
           <motion.div
@@ -65,10 +65,10 @@ const AboutCTA = () => {
           >
             <Link
               to="/contact"
-              className="inline-flex items-center px-8 py-4 bg-primary-500 hover:bg-primary-600 text-white font-semibold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-2xl text-lg"
+              className="inline-flex items-center px-8 py-4 bg-primary-500 hover:bg-primary-600 text-white font-semibold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-2xl text-base"
             >
-              Schedule an assessment
-              <FaArrowRight className="ml-3 w-5 h-5" />
+              Book a Discovery Call
+              <FaArrowRight className="ml-3 w-4 h-4" />
             </Link>
           </motion.div>
         </motion.div>

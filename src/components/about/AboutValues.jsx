@@ -8,29 +8,29 @@ const AboutValues = () => {
     {
       icon: FaUserCheck,
       title: 'Business before TECHNOLOGY',
-      subtitle: 'We start with the operating model, not the tool',
-      description: 'AI, automation and CRMs are instruments. Which ones we reach for, and when, is a decision that comes after we understand how the business is meant to run. Never the other way around.',
+      subtitle: 'We start with the business.',
+      description: 'Every engagement begins with understanding how the business operates today. We want to know how decisions are made, where work slows down, and what gets in the way of progress before we think about technology.',
       color: 'primary'
     },
     {
       icon: FaCommentDots,
       title: 'Clarity over noise',
-      subtitle: 'Plain language is the deliverable too',
-      description: 'If a recommendation can\'t be explained to a non-technical leader in one sentence, we haven\'t finished thinking. Every meeting note, every plan, every scope reads the same way: honest, direct, jargon-free.',
+      subtitle: 'We don\'t recommend technology for its own sake.',
+      description: 'AI, automation, and business systems are useful when they solve a real problem. If they don\'t make the business work better, they don\'t belong.',
       color: 'secondary'
     },
     {
       icon: FaClipboardList,
       title: 'Partner, not vendor',
-      subtitle: 'The person who scoped it is the person who ships it',
-      description: 'You won\'t meet a strategist on Monday and a stranger on Wednesday. The people you speak with in the assessment are the ones designing the operating model and standing up the systems that carry it.',
+      subtitle: 'We believe simple is better.',
+      description: 'The best operating models aren\'t the most complicated ones. They\'re the ones people understand, trust, and use every day.',
       color: 'primary'
     },
     {
       icon: FaDollarSign,
       title: 'Tied to a real number',
-      subtitle: 'Every fix has to move something you can point at',
-      description: 'Time leadership gets back. Coordination cost that disappears. Decisions that stop routing through one person. If we can\'t tie a recommendation to a real business outcome, we don\'t push it.',
+      subtitle: 'We measure success by how the business changes.',
+      description: 'More time for leadership. Fewer manual tasks. Better visibility. Faster decisions. Those are the outcomes we\'re interested in.',
       color: 'secondary'
     }
   ];
@@ -70,11 +70,11 @@ const AboutValues = () => {
           className="text-center mb-16"
         >
           <span className="inline-block px-4 py-1.5 bg-primary-100 text-primary-700 text-sm font-semibold rounded-full mb-4">
-            OUR PRINCIPLES
+            WHAT GUIDES OUR WORK
           </span>
-          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900">
+          {/* <h2 className="text-3xl sm:text-4xl font-bold text-gray-900">
             A few things we've made ourselves stubborn about.
-          </h2>
+          </h2> */}
         </motion.div>
 
         <motion.div

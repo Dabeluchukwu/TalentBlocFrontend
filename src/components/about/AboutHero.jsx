@@ -21,7 +21,7 @@ const AboutHero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <span className="inline-block px-4 py-1.5 bg-primary-500/20 text-primary-400 text-sm font-semibold rounded-full mb-6 border border-primary-500/20">
+            <span className="inline-block px-4 py-1.5 bg-primary-500/20 text-primary-400 text-xs font-semibold rounded-full mb-6 border border-primary-500/20">
               Who we are
             </span>
           </motion.div>
@@ -30,9 +30,9 @@ const AboutHero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2, duration: 0.6 }}
-            className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight"
+            className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight"
           >
-           An AI operations consultancy for companies that have outgrown {' '}
+           An AI operations consultancy for companies{' '}
             <span className="text-primary-400">that have outgrown</span>{' '}
            the way they were being run.
           </motion.h1>
@@ -41,7 +41,7 @@ const AboutHero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3, duration: 0.6 }}
-            className="mt-6 text-lg text-gray-300 leading-relaxed max-w-2xl"
+            className="mt-6 text-base text-gray-300 leading-relaxed max-w-2xl"
           >
            The people you meet on the first call with us are experts writing the operating model, designing the systems, and standing them up inside your business.
           </motion.p>
@@ -54,10 +54,10 @@ const AboutHero = () => {
           >
             <Link
               to="/contact"
-              className="inline-flex items-center px-6 py-3 bg-primary-500 hover:bg-primary-600 text-white font-semibold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-md hover:shadow-lg"
+              className="inline-flex items-center px-6 py-3 bg-primary-500 hover:bg-primary-600 text-white font-semibold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-md hover:shadow-lg text-sm"
             >
               Let's talk
-              <FaArrowRight className="ml-2 w-4 h-4" />
+              <FaArrowRight className="ml-2 w-3 h-3" />
             </Link>
           </motion.div>
         </div>

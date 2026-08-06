@@ -116,7 +116,7 @@ const ContactForm = () => {
                   <input
                     type="text"
                     {...register('name')}
-                    placeholder="Jane Doe"
+                    placeholder=""
                     className={`w-full pl-10 pr-4 py-3 bg-gray-50 border rounded-xl focus:ring-2 focus:ring-primary-500 focus:border-transparent outline-none transition-all duration-300 ${
                       errors.name ? 'border-red-500' : 'border-gray-200 hover:border-primary-300'
                     }`}
@@ -139,7 +139,7 @@ const ContactForm = () => {
                   <input
                     type="email"
                     {...register('email')}
-                    placeholder="jane@company.com"
+                    placeholder=""
                     className={`w-full pl-10 pr-4 py-3 bg-gray-50 border rounded-xl focus:ring-2 focus:ring-primary-500 focus:border-transparent outline-none transition-all duration-300 ${
                       errors.email ? 'border-red-500' : 'border-gray-200 hover:border-primary-300'
                     }`}
@@ -163,7 +163,7 @@ const ContactForm = () => {
                 <input
                   type="text"
                   {...register('subject')}
-                  placeholder="What is this about?"
+                  placeholder="How can we help?"
                   className={`w-full pl-10 pr-4 py-3 bg-gray-50 border rounded-xl focus:ring-2 focus:ring-primary-500 focus:border-transparent outline-none transition-all duration-300 ${
                     errors.subject ? 'border-red-500' : 'border-gray-200 hover:border-primary-300'
                   }`}
@@ -186,7 +186,7 @@ const ContactForm = () => {
                 <input
                   type="text"
                   {...register('company')}
-                  placeholder="Acme Corp"
+                  placeholder=""
                   className="w-full pl-10 pr-4 py-3 bg-gray-50 border border-gray-200 rounded-xl hover:border-primary-300 focus:ring-2 focus:ring-primary-500 focus:border-transparent outline-none transition-all duration-300"
                 />
               </div>
@@ -195,7 +195,7 @@ const ContactForm = () => {
             {/* Message Field */}
             <div>
               <label className="block text-sm font-semibold text-gray-700 mb-2">
-                What's not working? <span className="text-red-500">*</span>
+                What's slowing your team down? <span className="text-red-500">*</span>
               </label>
               <div className="relative">
                 <div className="absolute top-3 left-3 pointer-events-none">
@@ -204,7 +204,7 @@ const ContactForm = () => {
                 <textarea
                   {...register('message')}
                   rows="5"
-                  placeholder="Tell us about the manual work holding your team back..."
+                  placeholder="Tell us about your business, the challenges you're facing, or what you'd like to improve."
                   className={`w-full pl-10 pr-4 py-3 bg-gray-50 border rounded-xl focus:ring-2 focus:ring-primary-500 focus:border-transparent outline-none transition-all duration-300 resize-none ${
                     errors.message ? 'border-red-500' : 'border-gray-200 hover:border-primary-300'
                   }`}
@@ -244,7 +244,7 @@ const ContactForm = () => {
             </button>
 
             <p className="text-center text-xs text-gray-500">
-              We'll never share your information. Unsubscribe at any time.
+             We'll only use your information to respond to your enquiry.
             </p>
           </motion.form>
         )}

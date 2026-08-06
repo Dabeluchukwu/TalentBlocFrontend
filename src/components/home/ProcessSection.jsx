@@ -35,32 +35,32 @@ const ProcessSection = () => {
 
   const faqs = [
     {
-      question: 'You call yourselves an AI operations consultancy. What does that actually mean?',
-      answer: 'We work on how a company runs, not just what tools it uses. That means we look at the operating model first, then decide where AI, automation, CRM and internal tooling belong inside it. Technology is the instrument, the operating model is the offer.',
+      question: 'What does an AI operations consultancy do?',
+      answer: 'We help businesses improve the way they operate before introducing AI. That means understanding how work moves through your organization, identifying where time and effort are being lost, and designing a better way of working. Once the operating model is clear, we implement the right AI, automation, and business systems to support it.',
     },
     {
-      question: 'How is this different from an agency?',
-      answer: 'An agency ships projects. We take a position on the business. We stay long enough to see whether the operations actually got better, we say no to work that doesn\'t move a real number, and we\'re honest when the answer isn\'t more technology.',
+      question: 'How are you different from an AI agency or automation company?',
+      answer: 'Most AI agencies focus on building AI solutions or automating individual tasks. We start with the business itself. We look at your operations, processes, and decision-making first, then use AI where it creates measurable value. Our goal is not to add more technology. It\'s to build a business that runs better.',
     },
     {
-      question: 'Where does AI fit in?',
-      answer: 'Where it earns its keep. Some parts of the operation belong to humans, some parts belong to automation, and a specific slice belongs to AI: agents, assistants, and models that carry repeatable judgement work. We\'re deliberate about which is which.',
+      question: 'Where does AI fit into the process?',
+      answer: 'AI is part of the solution, not the starting point. Once we understand how your business should operate, we identify where AI can reduce manual work, improve decision-making, support your team, or automate repetitive processes. Every implementation has a clear business purpose.',
     },
     {
-      question: 'What does the first conversation look like?',
-      answer: 'Thirty minutes, no slide deck. You describe what feels heavy, we ask questions. By the end we can usually tell you whether the friction is the operating model, the instruments, the data, the process, or some flavour of all four. If we\'re not the right fit, we\'ll say so.',
+      question: 'What happens during the first conversation?',
+      answer: 'The first conversation is a discovery session. We learn about your business, how your team works, the challenges you\'re facing, and what you\'re trying to achieve. We\'ll also explain how we work and whether we\'re the right partner for your business.',
     },
     {
-      question: 'How long until something changes?',
-      answer: 'The assessment takes 1 to 3 weeks depending on the size of the business. First visible changes in the operating model usually land inside 4 to 8 weeks after that. The full picture is a longer partnership, not a project.',
+      question: 'How long before we start seeing results?',
+      answer: 'That depends on the complexity of your business and the work involved. Some improvements can be delivered within a few weeks, while larger operational transformations happen over several months. We focus on delivering value in stages so you begin seeing meaningful improvements as early as possible.',
     },
     {
-      question: 'Do you replace our existing tools?',
-      answer: 'Almost never. Most operating problems aren\'t a tooling problem, they\'re a design problem sitting on top of tools that were never wired up to how the business actually runs. We only recommend replacement when the current instrument is genuinely holding the business back.',
+      question: 'Are we going to replace our existing systems?',
+      answer: 'Usually not. We prefer to improve what you already have before recommending new tools. In many cases, the problem is not the software; it\'s how the systems are connected and how people use them. If new technology is genuinely needed, we\'ll recommend it with a clear reason.',
     },
     {
-      question: 'We don\'t really know what we need yet.',
-      answer: 'That\'s most of our first conversations. You don\'t have to arrive with a spec. If you can describe what\'s frustrating, slow, or unreliable right now, we can take it from there.',
+      question: 'What if we don\'t know exactly what we need yet?',
+      answer: 'That\'s completely normal. Many clients come to us knowing something isn\'t working but aren\'t sure what\'s causing it. We\'ll help you understand the underlying operational challenges, identify the biggest opportunities for improvement, and recommend the most practical next steps.',
     },
   ];
 
@@ -130,8 +130,8 @@ const ProcessSection = () => {
           className="max-w-3xl mx-auto"
         >
           <div className="text-center mb-10">
-            <h3 className="text-2xl font-bold text-gray-900">QUESTIONS</h3>
-            <p className="text-gray-600 mt-2">The things leaders ask before they book.</p>
+            <h3 className="text-2xl font-bold text-gray-900">Frequently Asked Questions</h3>
+            {/* <p className="text-gray-600 mt-2">The things leaders ask before they book.</p> */}
           </div>
 
           <div className="space-y-4">

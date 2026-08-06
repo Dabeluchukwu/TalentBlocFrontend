@@ -25,7 +25,7 @@ const ContactInfo = () => {
     {
       icon: FaClock,
       label: 'Response Time',
-      value: 'Within one business day',
+      value: 'We typically respond within one business day.',
       color: 'secondary'
     },
     {
@@ -111,8 +111,7 @@ const ContactInfo = () => {
             </div>
           </div>
           <p className="text-gray-700 leading-relaxed">
-            Founder-led and ops-heavy teams running 5+ disconnected tools who need their CRM 
-            and operations to actually work as one system.
+             Growing businesses that have outgrown the way they operate. If your team spends too much time coordinating work, relying on manual processes, or working across disconnected systems, we're probably a good fit.
           </p>
         </div>
       </motion.div>

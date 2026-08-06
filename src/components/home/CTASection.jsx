@@ -51,9 +51,10 @@ const CTASection = () => {
             viewport={{ once: true }}
             className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight"
           >
-            If your CRM feels like the
+            If growth is creating  
+
             <br />
-            <span className="text-secondary-300">second job nobody signed up for</span>,
+            <span className="text-secondary-300">more complexity than progress,</span>
             <br />
             let's talk.
           </motion.h2>
@@ -65,8 +66,8 @@ const CTASection = () => {
             viewport={{ once: true }}
             className="mt-6 text-lg text-primary-100 max-w-2xl mx-auto"
           >
-            Let's build the future of your organization together. Schedule a discovery call
-            with our senior partners today.
+            Every engagement starts with a conversation. We'll learn how your business operates today, where the friction is, and how to help you build a more scalable way of working.
+
           </motion.p>
 
           <motion.div
@@ -80,7 +81,7 @@ const CTASection = () => {
               to="/contact"
               className="inline-flex items-center px-8 py-4 bg-secondary-500 hover:bg-secondary-600 text-white font-semibold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-2xl text-lg"
             >
-              Book A Strategy Call
+              Book a Discovery Call
               <FaArrowRight className="ml-3 w-5 h-5" />
             </Link>
           </motion.div>

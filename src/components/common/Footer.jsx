@@ -60,7 +60,7 @@ const Footer = () => {
               </span>
             </Link>
             <p className="text-sm leading-relaxed">
-              An AI operations consultancy. We help leaders resolve operational debt, so the business grows without the coordination getting heavier.
+              An AI operations consultancy helping businesses eliminate operational debt, simplify the way work gets done, and scale with confidence.
             </p>
             {/* Social Icons */}
             <div className="flex space-x-3 pt-2">
