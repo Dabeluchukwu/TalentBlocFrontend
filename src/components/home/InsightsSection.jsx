@@ -126,7 +126,7 @@ const InsightsSection = () => {
               Insights & Resources
             </h2>
             <p className="mt-2 text-gray-600">
-              Stay ahead of the curve with our latest research and success stories.
+              Stay ahead of the curve with our latest articles, case studies, and announcements.
             </p>
           </div>
           <Link
