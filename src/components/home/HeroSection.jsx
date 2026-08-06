@@ -136,7 +136,7 @@ const HeroSection = ({ scrollToProcess }) => {
               className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight"
             >
               Your business grew.{' '}
-              <span className="text-primary-400">The way it's run didn't.</span>
+              <span className="text-primary-400">The way it operates didn't.</span>
             </motion.h1>
 
             <motion.p
@@ -145,7 +145,8 @@ const HeroSection = ({ scrollToProcess }) => {
               transition={{ delay: 0.4, duration: 0.6 }}
               className="mt-6 text-lg text-gray-200 leading-relaxed max-w-lg"
             >
-              Most companies struggle because the way they work no longer supports the growth they want. Processes become disconnected, teams rely on manual work, and important decisions get delayed or depend on the right person always being available. We help businesses simplify how they operate, so they can grow without adding more complexity.
+              Growth exposes weakness in how a business runs. Processes that once worked become slow. Information gets scattered. Teams rely on manual work, and important decisions wait for the right person to always be available. 
+              We help businesses redesign how they operate, creating simpler workflows, better visibility, and systems that support growth.
             </motion.p>
 
             <motion.div

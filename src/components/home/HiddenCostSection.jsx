@@ -5,19 +5,19 @@ const HiddenCostSection = () => {
   const costs = [
     {
       number: "01",
-      title: "Leadership spends more time coordinating than deciding.",
+      title: "Leadership spends more time coordinating work than making strategic decisions.",
     },
     {
       number: "02",
-      title: "Every new hire has to be trained on the workarounds.",
+      title: "Employees rely on manual work, repeated tasks, and undocumented workarounds.",
     },
     {
       number: "03",
-      title: "Reports contradict each other and nobody quite trusts either.",
+      title: "Critical information is scattered across people, spreadsheets, and disconnected systems.",
     },
     {
       number: "04",
-      title: "Growth is arriving faster than the operations can absorb it.",
+      title: "The business keeps growing, but operations become harder to scale.",
     },
   ];
 
@@ -60,14 +60,9 @@ const HiddenCostSection = () => {
               </p>
 
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
-                Most of the friction
-                <br />
-                inside a growing
-                <br />
-                company is
-                <br />
+                Growth creates complexity. 
                 <span className="bg-gradient-to-r from-primary-500 to-slate-300 bg-clip-text text-transparent">
-                  operational debt.
+                  AI can't fix broken operations.
                 </span>
               </h2>
             </motion.div>
@@ -79,11 +74,9 @@ const HiddenCostSection = () => {
               viewport={{ once: true }}
               className="mt-8 text-lg text-gray-600 leading-relaxed max-w-md"
             >
-              It looks like small things. A workaround here, a duplicated
-              spreadsheet there, a tool nobody quite trusts. Left alone it
-              compounds, until the way you're running the company is the reason
-              it can't move. It rarely shows up on a P&amp;L. It shows up in how
-              tired leadership is.
+              <p className="pb-2">As businesses grow, work becomes fragmented. Teams create workarounds, information lives in different systems, and decisions take longer because no one has a complete picture.</p>
+              <p className="pb-2">Adding AI on top of disconnected operations only makes those problems move faster.</p>
+              <p>We help businesses redesign how work flows across the organization, then apply AI where it removes friction, improves decision-making, and creates lasting operational advantage.</p>
             </motion.p>
           </div>
 

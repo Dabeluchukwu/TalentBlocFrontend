@@ -9,26 +9,26 @@ const ProcessSection = () => {
   const steps = [
     {
       icon: FaUserFriends,
-      title: 'Assess',
-      description: 'We spend real time inside the business, with leadership and the team, watching where the day actually goes. We surface where the operational debt is hiding, and what it\'s costing.',
+      title: 'Discover',
+      description: 'We learn how your business operates, where work slows down, and what outcomes matter most.',
       color: 'primary',
     },
     {
       icon: FaPencilAlt,
-      title: 'Blueprint',
-      description: 'A written operating model. What the process should be, which decisions need to be human, which don\'t, which instruments carry the load, and what should measurably change.',
+      title: 'Design',
+      description: 'We design an operating model that supports the way your business should run as it grows.',
       color: 'secondary',
     },
     {
       icon: FaShip,
-      title: 'Build',
-      description: 'We put the plan into the live business in phases. AI, automation, CRM and internal tooling tuned to the model. Something useful is in your hands within weeks, not quarters.',
+      title: 'Deliver',
+      description: 'We implement the systems, AI, and automation in manageable phases, so your team starts seeing value early.',
       color: 'primary',
     },
     {
       icon: FaSeedling,
-      title: 'Partner',
-      description: 'Operations doesn\'t sit still. We stay close, tune what\'s live, and help the operating model evolve as the business does. Fewer surprises, more confidence.',
+      title: 'Improve',
+      description: 'As your business evolves, we refine the operating model, optimize what\'s in place, and help you keep improving over time.',
       color: 'secondary',
     },
   ];

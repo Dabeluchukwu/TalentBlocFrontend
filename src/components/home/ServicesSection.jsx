@@ -14,29 +14,29 @@ const ServicesSection = () => {
     {
       icon: FaRocket,
       title: 'Operations Assessment',
-      label: 'See it clearly',
-      description: 'We sit inside the business, watch how the work actually moves, and give leadership an honest read of where the debt is and what it\'s costing. Not a 40 page report. A conversation you can act on.',
+      label: 'SEE WHAT’S HOLDING THE BUSINESS BACK',
+      description: 'We take a close look at how work moves across your business, where delays happen, how decisions are made, and where operational friction is costing you time, money, and momentum. You leave with a clear understanding of what needs to change and why.',
       color: 'primary',
     },
     {
       icon: FaWrench,
       title: 'Operating Blueprint',
-      label: 'Design the fix',
-      description: 'A written plan for the operations layer. What the process should be, which decisions need to be human, which don\'t, and which instruments carry the work. Priced by outcome, not by hour.',
+      label: 'DESIGN A BETTER OPERATING MODEL',
+      description: 'Before technology comes structure. We design the workflows, decision paths, responsibilities, and systems your business needs to operate consistently at scale. Every recommendation is practical, measurable, and built around your business.',
       color: 'secondary',
     },
     {
       icon: FaDatabase,
       title: 'AI, Systems & Automation',
-      label: 'Put it in place',
-      description: 'We deploy the instruments that carry the plan: AI where it earns its keep, automation for the repeatable, CRMs and internal tools tuned to how the business actually runs. No shelfware.',
+      label: 'BUILD THE SYSTEMS THAT MAKE IT WORK',
+      description: 'We implement the AI, automation, and business systems that support the operating model. From internal AI assistants to workflow automation and CRM optimization, every solution is designed to reduce manual work and improve execution.',
       color: 'primary',
     },
     {
       icon: FaRobot,
       title: 'Ongoing Partnership',
-      label: 'Stay serious about it',
-      description: 'Operations isn\'t a project you finish. We stay close after launch, tune what\'s live, and help the operating model keep up as the business does. You get a partner, not a vendor.',
+      label: 'KEEP IMPROVING AS THE BUSINESS GROWS',
+      description: 'Operations evolve as businesses evolve. We continue working with your team to refine processes, optimize AI systems, and adapt your operating model as new challenges and opportunities emerge. We\'re a long-term partner invested in how your business performs.',
       color: 'secondary',
     },
   ];
@@ -71,10 +71,10 @@ const ServicesSection = () => {
           className="text-center mb-16"
         >
           <span className="inline-block px-4 py-1.5 bg-primary-100 text-primary-700 text-sm font-semibold rounded-full mb-4">
-            WHAT WE DO
+            How We Help
           </span>
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900">
-            Four ways in. Same team on the other side.
+            We help businesses design, build, and improve the way they operate with AI.
           </h2>
         </motion.div>
 

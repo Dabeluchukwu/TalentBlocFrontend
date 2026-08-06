@@ -53,13 +53,14 @@ const StackSection = () => {
           className="text-center mb-16"
         >
           <span className="inline-block px-4 py-1.5 bg-primary-100 text-primary-700 text-sm font-semibold rounded-full mb-4">
-            THE SHAPE OF THE FIX
+            THE SHAPE OF THE SOLUTION
           </span>
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 max-w-3xl mx-auto">
-            Technology <span className='text-primary-400'>is the instrument</span> , not the offer.
+           Operations first.  <span className='text-primary-400'>Technology second.</span> 
           </h2>
           <p className="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
-            The operating model comes first. Once that's clear, we choose the technology that carry it. A CRM in the middle, the rest of your tools plugged in around it, and a thin layer of AI and automation quietly keeping the whole thing honest.
+           Technology delivers the most value when it's built around the way your business should operate, not the way it happens to operate today.
+           We start by designing the operating model. Then we select and connect the right systems, automate repetitive work, and introduce AI where it improves decisions, execution, and efficiency.
           </p>
         </motion.div>
 
@@ -73,7 +74,7 @@ const StackSection = () => {
         >
           <h3 className="text-xl font-bold text-gray-900 mb-6 text-center">
             <span className="bg-primary-100 text-primary-700 px-4 py-2 rounded-lg">
-              LAYER 01 / YOUR CRM
+             LAYER 1 · YOUR CORE BUSINESS PLATFORM
             </span>
           </h3>
           <div className="flex flex-wrap justify-center gap-4">
@@ -107,7 +108,7 @@ const StackSection = () => {
         >
           <h3 className="text-xl font-bold text-gray-900 mb-6 text-center">
             <span className="bg-secondary-100 text-secondary-700 px-4 py-2 rounded-lg">
-              LAYER 02 / EVERYTHING ELSE YOU RUN
+              LAYER 2 · THE TOOLS YOUR BUSINESS RUNS ON
             </span>
           </h3>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
@@ -140,7 +141,7 @@ const StackSection = () => {
         >
           <h3 className="text-xl font-bold text-gray-900 mb-6 text-center">
             <span className="bg-primary-100 text-primary-700 px-4 py-2 rounded-lg">
-              LAYER 03 / THE WIRING
+             LAYER 3 · AI AND AUTOMATION
             </span>
           </h3>
           <div className="flex flex-wrap justify-center gap-4">
@@ -163,7 +164,10 @@ const StackSection = () => {
             })}
           </div>
           <p className="mt-4 text-sm text-gray-500 text-center italic">
-            Keeps the layers above talking without anyone in the loop.
+            THE INTELLIGENCE THAT CONNECTS EVERYTHING TOGETHER.
+          </p>
+          <p className="mt-4 text-sm text-gray-500 text-center">
+            AI ASSISTANTS, WORKFLOW AUTOMATION, INTEGRATIONS, AND BUSINESS LOGIC ELIMINATE REPETITIVE WORK, KEEP INFORMATION IN SYNC, AND HELP WORK MOVE WITHOUT CONSTANT MANUAL COORDINATION.
           </p>
         </motion.div>
       </div>
