@@ -143,14 +143,29 @@ const ResourceDetail = () => {
           </motion.div>
         )}
 
-        {/* Content */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.3 }}
-          className="prose prose-lg prose-primary max-w-none"
-          dangerouslySetInnerHTML={{ __html: post.content }}
-        />
+      {/* Content */}
+<motion.div
+  initial={{ opacity: 0, y: 20 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.6, delay: 0.3 }}
+  className="prose prose-lg prose-primary max-w-none
+    prose-headings:font-bold prose-headings:text-gray-900 prose-headings:scroll-mt-24
+    prose-h1:text-4xl prose-h1:mt-8 prose-h1:mb-4
+    prose-h2:text-3xl prose-h2:mt-8 prose-h2:mb-4 prose-h2:border-b prose-h2:border-gray-200 prose-h2:pb-2
+    prose-h3:text-2xl prose-h3:mt-6 prose-h3:mb-3
+    prose-p:text-gray-700 prose-p:leading-relaxed prose-p:my-4
+    prose-a:text-primary-500 prose-a:no-underline hover:prose-a:underline
+    prose-strong:text-gray-900
+    prose-ul:my-4 prose-ul:list-disc prose-ul:pl-6
+    prose-ol:my-4 prose-ol:list-decimal prose-ol:pl-6
+    prose-li:text-gray-700 prose-li:my-1
+    prose-blockquote:border-l-4 prose-blockquote:border-primary-500 prose-blockquote:bg-primary-50/50 prose-blockquote:py-2 prose-blockquote:px-4 prose-blockquote:rounded-r-lg prose-blockquote:italic prose-blockquote:not-italic
+    prose-code:bg-gray-100 prose-code:text-primary-600 prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded prose-code:text-sm prose-code:before:content-none prose-code:after:content-none
+    prose-pre:bg-gray-900 prose-pre:text-gray-100 prose-pre:rounded-lg prose-pre:p-4
+    prose-img:rounded-lg prose-img:shadow-md prose-img:my-8
+  "
+  dangerouslySetInnerHTML={{ __html: post.content }}
+/>
 
         {/* Tags */}
         {post.tags && post.tags.length > 0 && (

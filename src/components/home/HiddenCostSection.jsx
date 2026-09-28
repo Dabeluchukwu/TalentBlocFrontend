@@ -62,12 +62,13 @@ const HiddenCostSection = () => {
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
                 Growth creates complexity. {' '}
                 <span className="bg-gradient-to-r from-primary-500 to-slate-300 bg-clip-text text-transparent">
-                   AI can't fix broken operations.
+                  AI can't fix broken operations.
                 </span>
               </h2>
             </motion.div>
 
-            <motion.p
+            {/* CHANGED: motion.p → motion.div */}
+            <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2, duration: 0.6 }}
@@ -77,7 +78,7 @@ const HiddenCostSection = () => {
               <p className="pb-2">As businesses grow, work becomes fragmented. Teams create workarounds, information lives in different systems, and decisions take longer because no one has a complete picture.</p>
               <p className="pb-2">Adding AI on top of disconnected operations only makes those problems move faster.</p>
               <p>We help businesses redesign how work flows across the organization, then apply AI where it removes friction, improves decision-making, and creates lasting operational advantage.</p>
-            </motion.p>
+            </motion.div>
           </div>
 
           {/* RIGHT COLUMN */}

@@ -5,6 +5,7 @@ import { FaArrowLeft, FaUpload, FaTrash, FaStar } from 'react-icons/fa';
 import axios from 'axios';
 import { useAuth } from '../../hooks/useAuth';
 import LoadingSpinner from '../../components/common/LoadingSpinner';
+import RichTextEditor from '../../components/dashboard/RichTextEditor';
 
 const CreatePost = () => {
   const { id } = useParams();
@@ -200,22 +201,20 @@ const CreatePost = () => {
                 />
               </div>
 
-              {/* Content */}
-              <div className="mt-4">
-                <label className="block text-sm font-semibold text-gray-700 mb-2">
-                  Content <span className="text-red-500">*</span>
-                </label>
-                <textarea
-                  name="content"
-                  value={formData.content}
-                  onChange={handleChange}
-                  rows="12"
-                  placeholder="Write your post content here..."
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent outline-none resize-none font-mono text-sm"
-                  required
-                />
-                <p className="text-xs text-gray-500 mt-1">HTML tags are supported</p>
-              </div>
+           {/* Content */}
+<div className="mt-4">
+  <label className="block text-sm font-semibold text-gray-700 mb-2">
+    Content <span className="text-red-500">*</span>
+  </label>
+  <RichTextEditor
+    value={formData.content}
+    onChange={(html) => setFormData(prev => ({ ...prev, content: html }))}
+    placeholder="Write your post content here..."
+  />
+  <p className="text-xs text-gray-500 mt-1">
+    Use the toolbar to add headings, bold text, lists, and more
+  </p>
+</div>
             </motion.div>
           </div>
 
