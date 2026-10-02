@@ -125,7 +125,7 @@ const Footer = () => {
                   className="text-gray-400 hover:text-primary-400 transition-colors duration-200 flex items-center space-x-2"
                 >
                   <FaEnvelope className="w-4 h-4 flex-shrink-0" />
-                  <span>talentbloc.africa@gmail.com</span>
+                  <span>contact@talentbloc.co</span>
                 </a>
               </li>
               <li>
