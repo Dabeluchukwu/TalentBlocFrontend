@@ -18,8 +18,8 @@ const ContactInfo = () => {
     {
       icon: FaEnvelope,
       label: 'Direct Email',
-      value: 'talentbloc.africa@gmail.com',
-      link: 'mailto:talentbloc.africa@gmail.com',
+      value: 'contact@talentbloc.co',
+      link: 'mailto:contact@talentbloc.co',
       color: 'primary'
     },
     {
